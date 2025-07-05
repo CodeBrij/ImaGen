@@ -50,7 +50,7 @@ const Login = () => {
             password
           });
           console.log(resp.data);
-          if(resp.data.success){
+          if(resp.data){
             // Registration successful
             setToken(resp.data.token);
             setUser(resp.data.user);
