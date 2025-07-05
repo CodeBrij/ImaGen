@@ -13,7 +13,7 @@ const AppContextProvider = (props) =>{
 
     const [token,setToken] = useState(localStorage.getItem("token"));
 
-    const [credit, setCredit] = useState(null);
+    const [credit, setCredit] = useState(null)
 
     
     const generateImage = async (prompt) => {

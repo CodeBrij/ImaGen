@@ -5,7 +5,7 @@ import { AppContext } from '../context/AppContext'
 import { useClerk, UserButton, useUser } from '@clerk/clerk-react'
 
 const Navbar = () => {
-    const {user, setUser, setShowLogin, loadUserCredit, credit} = useContext(AppContext);
+    const {user, setUser, setShowLogin, loadUserCredit, credit, token} = useContext(AppContext);
     const navigate = useNavigate();
 
     useEffect(() => {
