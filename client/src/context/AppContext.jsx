@@ -52,7 +52,8 @@ const AppContextProvider = (props) =>{
             console.log("Credit var:" + credit);
             
         } catch (error) {
-            toast.error("Error loading user credit:", error);
+            if(token)
+                toast.error("Error loading user credit:", error);
         }
     }
 
